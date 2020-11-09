@@ -1,0 +1,91 @@
+.slider_start {
+  position: relative;
+}
+.slide_image {
+  position: relative;
+  width: 100%;
+}
+
+.slide_content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.dialogue {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Lato";
+  line-height: 28.8px;
+  text-align: center;
+  margin: 0 53px;
+}
+.price {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Lato";
+  line-height: 17.16px;
+  color: #5193f6;
+  margin: 13px 0;
+}
+button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined.Add_to_cart_button {
+  color: #ffffff;
+  font-family: "Lato";
+  font-weight: 600;
+  border-radius: 5px;
+  font-size: 12px;
+  height: 40px;
+  width: 140px;
+  border: 1px solid #fbf4f4;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 13px 0;
+  transition: all 0.2s ease-in-out;
+}
+button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined.Add_to_cart_button:hover {
+  color: #000000;
+  background: #d19f28 !important;
+  border: 1px solid #d19f28;
+}
+
+.slide_content p {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Lato";
+  margin: 13px 0 24px 0;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 16px !important;
+  color: #ffffff !important;
+}
+
+.swiper-container {
+  position: unset !important;
+}
+
+.swiper-button-prev {
+  left: 0 !important;
+}
+.swiper-button-next {
+  right: 3% !important;
+}
+.swiper-wrapper {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  background: #414752 !important;
+  padding: 17px 21px !important;
+  border-radius: 50% !important;
+}

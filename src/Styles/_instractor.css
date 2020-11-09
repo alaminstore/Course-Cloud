@@ -1,0 +1,120 @@
+.instractor-box{
+    border-radius: 10px;
+}
+.instractor-box .img-sec{
+    position: relative;
+    border-radius: 10px 10px 0px 0px;
+}
+.instractor-box .img-sec img{
+
+    border-radius: 10px 10px 0px 0px;
+}
+.instractor-box .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.07) 5.31%, #000000 100%);
+
+}
+.instractor-box .overlay .overlay_content{
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .instractor-box .overlay .overlay_content {
+        bottom: 24px;
+    }
+
+    .instractor-box .overlay .overlay_content h2 {
+        font-size:  1.3rem;
+    }
+    .instractor-box .overlay .overlay_content p {
+        font-size: .8rem;
+    }
+    .instractor-box .overlay .overlay_content button {
+        font-size: .7rem;
+    }
+
+}
+
+.instractor-box .content-sec{
+    background: #21252D;
+    box-shadow: 0px 47px 325px rgba(0, 0, 0, 0.08), 0px 5.88513px 40.695px rgba(0, 0, 0, 0.04);
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 17px;
+}
+.instractor-box .content-sec .left{
+    text-align: right;
+
+    padding: 17px 10px 0 0;
+}
+
+
+.instractor-box .content-sec .middle{
+    width: 1px;
+    border-right: 4px dashed #494949;
+
+}
+.instractor-box .content-sec .right {
+    text-align: left;
+    padding: 17px 0 0 10px;
+
+}
+
+.instractor-box .content-sec h5{
+    font-size: 1.1rem;
+}
+.instractor-box .content-sec p{
+    font-size: .8rem;
+}
+
+
+ .slick-custom-nav {
+    position: absolute;
+    top: 50%;
+    display: block;
+    background: #414752;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 60%;
+    padding: 7px 8px 8px;
+    z-index: 9999;
+}
+    .slick-custom-prev {
+        left: -9px;
+    }
+  .slick-custom-next{
+    right: -9px;
+}
+
+  .slick-dots li {
+    display: inline-block;
+    margin: 0 7px;
+    width: auto;
+}
+
+ .slick-dots span {
+    display: block;
+    width: 7px;
+    height: 7px;
+    background: #596170;
+    border-radius: 4px;
+    outline: 0;
+    -webkit-transition: background 250ms ease, width 500ms ease;
+    transition: background 250ms ease, width 500ms ease;
+}
+
+ .slick-dots .slick-active span {
+    background: #fff;
+    width: 22px;
+}

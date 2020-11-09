@@ -1,0 +1,62 @@
+.btns .activebtn {
+  border-bottom: 3px solid #dc9202;
+  border-radius: 2px;
+  opacity: 1;
+}
+.img_details {
+  display: flex;
+}
+
+.img_details {
+  background: #191c23;
+  padding: 20px 3px 20px 3px;
+  margin-bottom: 30px;
+}
+.checked {
+  color: #fcc400;
+}
+.user_star.d-flex {
+  align-items: center;
+}
+.list_title h5 {
+  color: #fbf4f4;
+  font-size: 20px;
+  font-family: "Lato";
+  font-weight: 700;
+}
+.list_desc p {
+  font-size: 15px;
+  font-family: "Lato";
+  font-weight: 400;
+  color: #fbf4f4;
+  opacity: 53%;
+  margin-top: 15px;
+}
+.bookmark {
+  cursor: pointer;
+  float: right;
+}
+.other_info.text-white {
+  display: flex;
+  width: 100%;
+  margin-top: 12px;
+}
+p.p_type {
+  font-size: 14px;
+  font-family: "Lato";
+  font-weight: 500;
+  color: #fbf4f4;
+  margin-left: 10px;
+}
+.user_star.d-flex {
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid rgba(225, 225, 225, 0.24);
+}
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: inherit;
+  align-items: stretch;
+  width: 100%;
+}

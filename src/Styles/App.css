@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:focus {
+  outline: none;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+.clr {
+  clear: both !important;
+}
+/* reset*/
+button:focus {
+  outline: none;
+}
+/**/
+
+.bg {
+  background: #000;
+}
+
+.nav_dark {
+}
+.nav_dark a {
+  color: #fbf4f4;
+}
+.nav_dark a:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.py-6 {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+.sec-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  color: #fbf4f4;
+}
+
+.login_btn {
+  padding: 8px 22px !important;
+  background: #d19f28 !important;
+  color: #191c21 !important;
+}
+
+.primary_btn {
+  padding: 8px 22px !important;
+  background: #5193f6 !important;
+  color: white !important;
+}
+.warning_btn:hover,
+.warning_btn:focus,
+.warning_btn:active {
+  color: black !important;
+  background: #e3a617 !important;
+}
+
+.course_tab a {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+}
+.course_tab a:hover,
+.course_tab a:focus {
+  border-color: #d19f28;
+}
+/* Header */
+#main-header {
+  background: #21252d !important;
+}
+
+.header-search-box {
+  position: relative;
+}
+.header-search {
+  position: relative;
+  background: #191c21;
+  color: #bbbbbb;
+  border: 1px solid #bbbbbb75;
+}
+.header-search-icon {
+  position: absolute;
+  right: 13px;
+  cursor: pointer;
+  color: #bbbbbb;
+  font-size: 1.2rem;
+}
+.main_Nav {
+  align-items: center;
+}
+.main_Nav a {
+  text-transform: uppercase;
+  color: #fbf4f4;
+  font-size: 14px;
+}
+.sidbar_nav {
+  align-items: flex-start;
+}
+
+/*Footer */
+.top_footer {
+  background: #191c21 !important;
+  color: white;
+  padding: 3.5em 0;
+}
+.footer_nav a.nav-link {
+  display: block;
+  padding: 0.5rem 0;
+  color: #fbf4f4;
+}
+.footer_nav a.nav-link:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+.bottom-footer {
+  background: #21252d;
+}
+.bottom-footer p {
+  font-size: 18px;
+  color: #fbf4f4;
+}

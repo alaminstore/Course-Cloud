@@ -1,0 +1,22 @@
+/* info sec*/
+.info_section{
+    background: #191c23;
+}
+
+.info-box{
+    color: #FBF4F4;
+    text-align: center;
+}
+
+/*live recording sec*/
+.live_recordings{
+    background: #191c23;
+}
+#live-class{
+    position: relative;
+}
+#live-class img {
+    position: absolute;
+    top: -2px;
+    left: 16px;
+}

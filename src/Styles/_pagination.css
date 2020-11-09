@@ -1,0 +1,66 @@
+.pagination_inner {
+  display: flex;
+  color: #fbf4f4;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 100px 0;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+nav.main_pagination ul li {
+  margin: 0 0px 0px 19px;
+  height: 50px;
+  width: 50px;
+  border: 1.5px solid #486c74;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Lato";
+}
+nav.main_pagination ul > :first-child {
+  background: #3a414e;
+  border: 1.5px solid #3a414e;
+  border-radius: 5px;
+}
+nav.main_pagination ul > :last-child {
+  background: #3a414e;
+  border: 1.5px solid #3a414e;
+  border-radius: 5px;
+}
+nav.main_pagination ul li:nth-last-child(3) {
+  border: 1.5px solid transparent;
+  height: 50px;
+  width: 5px;
+}
+.pagination_inner h3 {
+  color: #fbf4f4;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Lato";
+}
+nav.main_pagination ul li:hover {
+  background: #d19f28;
+  border: 1px solid #d19f28;
+  color: #191c21;
+}
+a.ml-auto.btn.btn-outline-primary {
+  border: 0.7px solid #fbf4f4;
+  border-radius: 3px;
+  color: #fbf4f4;
+  font-size: 12px;
+  font-family: "Lato";
+  font-weight: 600;
+  width: 115px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

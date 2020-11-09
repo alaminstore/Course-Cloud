@@ -1,0 +1,95 @@
+.header_allCourse {
+  background-image: url("/images/All_courses.png");
+  background-size: cover;
+  background-position: center;
+}
+.header_allCourse {
+  color: #fbf4f4;
+  position: relative;
+}
+.header_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 65px 0;
+}
+.header_content h2 {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Lato";
+  line-height: 42px;
+}
+.header_content p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Lato";
+  line-height: 12.87px;
+}
+input.search-form {
+  width: 412px;
+  text-align: center;
+  height: 60px;
+  line-height: 19.6px;
+  font-size: 14px;
+  font-family: "Lato";
+  font-weight: 400;
+  background: transparent;
+  border: 2px solid #353d4c;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #fbf4f4;
+  font-family: "Lato";
+}
+section.Grid_or_list_view {
+  background: #000;
+  padding-top: 30px;
+}
+::placeholder {
+  /* Firefox 18- */
+  color: #fbf4f4;
+}
+button.btn.btn-search {
+  width: 58px;
+  height: 60px;
+  background: #21252d;
+  border-radius: 0px 5px 5px 0px;
+  color: #fff;
+}
+.list_grid_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.listView i,
+.gridView i {
+  color: #353d4c;
+}
+.nav_dark.course_tab.nav {
+  height: 60px;
+  background: #21252d;
+  border-radius: 9px;
+  line-height: 3;
+}
+.card {
+  border-radius: 10px;
+}
+.input-group {
+  flex-wrap: unset !important;
+}
+.list_grid_handler {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+button.listView.ml-2 {
+  border: 0;
+  background: #21252d;
+  padding: 14.3px;
+  border-radius: 0px 9px 9px 0px;
+}
+button.gridView.ml-2 {
+  border: 0;
+  padding: 17px;
+  border-radius: 9px 0 0 9px;
+  margin-right: -7px;
+}

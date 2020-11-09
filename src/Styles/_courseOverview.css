@@ -1,0 +1,79 @@
+.header_overview.text-white {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.train_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.trainer_name_dept h3 {
+  font-size: 28px;
+  font-family: "Lato";
+  color: #fbf4f4 !important;
+  margin: 1px 0;
+}
+.trainer_name_dept h6 {
+  font-size: 14px;
+  font-family: "Lato";
+  font-weight: 400;
+  color: #fbf4f4;
+  margin: 4px 0;
+}
+
+.header_overview {
+  background: #21252d;
+  border: 1px solid #21252d;
+  box-sizing: border-box;
+  border-radius: 5px 5px 0px 0px;
+  padding: 29px 23px 26px 23px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.time_frame h5 {
+  font-size: 16px;
+  color: #fbf4f4;
+  width: 224px;
+  height: 60px;
+  border: 1px solid #413e3e;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overview {
+  background: #191c21;
+  border: 1px solid #21252d;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-bottom: 110px;
+}
+.overview h5 {
+  color: #fbf4f4;
+  font-size: 20px;
+  font-family: "Lato";
+  font-weight: 600;
+  margin: 21px 0px 5px 23px;
+}
+.overview p {
+  color: #bbbbbb;
+  font-size: 14px;
+  font-family: "Lato";
+  font-weight: 400;
+  line-height: 21px;
+  margin: 0 23px 14px 23px;
+}
+.overview button {
+  border: 0;
+  background: transparent;
+  margin: 14px 0 14px 23px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+}

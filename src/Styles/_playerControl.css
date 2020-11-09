@@ -1,0 +1,22 @@
+.playBg {
+  background: rgba(255, 255, 255, 0.62);
+  border-radius: 50%;
+  width: 79px;
+  height: 78px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 0 0 6px;
+}
+.WithStyles\(ForwardRef\(Slider\)\)-thumb-22 {
+  width: 0 !important;
+  height: 0 !important;
+  border: 0 !important;
+  margin-top: 0 !important;
+  margin-left: -2px !important;
+  background-color: #fff;
+}
+.WithStyles\(ForwardRef\(Slider\)\)-root-21 {
+  color: #ffffff !important;
+  height: 0px !important;
+}
