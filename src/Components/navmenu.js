@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
@@ -19,6 +19,7 @@ import SearchIcon from "@material-ui/icons/Search";
 import Image from "react-bootstrap/Image";
 import { useStateValue } from "../Store";
 import { Link } from "react-router-dom";
+import Login from "./logIn";
 
 const useStyles = makeStyles((theme) => ({
   notification: {
@@ -101,6 +102,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function NavMenu() {
+  const [modalShow, setModalShow] = useState(false);
   const [{ user, ui }, dispatch] = useStateValue();
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -220,7 +222,7 @@ export default function NavMenu() {
           <div className={classes.grow} />
 
           <div className={classes.sectionDesktop}>
-            {!user && (
+            {user && (
               <Nav className="ml-auto main_Nav">
                 <Link to="#home" className="nav-link">
                   Categories
@@ -229,13 +231,18 @@ export default function NavMenu() {
                   Support
                 </Link>
                 <Link to="#features" className="nav-link">
-                  <Button className="login_btn" variant="contained">
+                  <Button
+                    onClick={() => setModalShow(true)}
+                    className="login_btn"
+                    variant="contained"
+                  >
                     LOGIN
                   </Button>
+                  <Login show={modalShow} onHide={() => setModalShow(false)} />
                 </Link>
               </Nav>
             )}
-            {user && (
+            {!user && (
               <React.Fragment>
                 {" "}
                 <Nav className="ml-auto main_Nav">

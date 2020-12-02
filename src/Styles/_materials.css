@@ -1,0 +1,98 @@
+.banner_portion {
+  background-image: url("/images/materials_bg.png");
+  background-size: cover;
+  background-position: center center;
+}
+.banner_inner {
+  color: #fbf4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 170px 0 147px 0;
+}
+.banner_inner h2 {
+  font-size: 36px;
+  font-family: "Lato";
+  font-weight: 700;
+  line-height: 50.4px;
+}
+.banner_inner p {
+  font-size: 14px;
+  opacity: 0.8;
+  width: 45%;
+  text-align: center;
+  margin-bottom: 53px;
+}
+input.banner_searchform {
+  line-height: 19.6px;
+  font-size: 14px;
+  font-family: "Lato";
+  font-weight: 400;
+  background: transparent;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  border-radius: 5px 0px 0px 5px;
+  padding: 0 17px;
+  color: #2e2d2d;
+  background: #ffffff;
+}
+
+::placeholder {
+  color: #c3b6b6;
+}
+button.btn.btn-search.material_btn {
+  background: #e2b627;
+}
+input.banner_searchform.materials_input {
+  height: 60px;
+  width: 612px;
+}
+.card_portion {
+  background: #191c23;
+}
+
+.card_portion_header h4 {
+  color: #fbf4f4;
+  font-size: 36px;
+  font-family: "Lato";
+  font-weight: 700;
+  margin-top: 73px;
+}
+.card_portion_header p {
+  color: #fbf4f4;
+  opacity: 0.8;
+  font-size: 14px;
+  font-family: "Lato";
+  font-weight: 400;
+  width: 46%;
+  margin: 10px 0 63px 0;
+}
+.card_component.row .col-md-4 {
+  margin-bottom: 36px;
+}
+.pagination_portion {
+  margin: 60px 0 81px 0;
+  width: 100%;
+}
+.business_slider_inner h4 {
+  color: #fbf4f4;
+  font-size: 36px;
+  font-family: "Lato";
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.business_slider_portion {
+  margin: 110px 0;
+}
+.business_slider_inner {
+  padding: 35px 54px 50px 54px;
+  background: #191c21;
+}
+/* .input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center !important;
+  width: 100%;
+} */

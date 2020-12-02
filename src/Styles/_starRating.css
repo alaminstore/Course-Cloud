@@ -1,0 +1,10 @@
+.star-rating-filled {
+  fill: #fcc400;
+}
+
+.star-rating-blank {
+  fill: #c2c1bf;
+}
+.flex-container {
+  display: flex;
+}

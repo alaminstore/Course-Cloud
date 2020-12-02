@@ -28,7 +28,7 @@ export default class Allcourse extends Component {
     this.setState({
       ...this.state,
       checked: false,
-      background: "#21252D",
+      background: "#2E3440",
     });
 
     console.log("clicked false");

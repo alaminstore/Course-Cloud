@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import Typography from "@material-ui/core/Typography";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row, Nav } from "react-bootstrap";
 import ReactPlayer from "react-player";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
@@ -19,6 +19,9 @@ import Othercourse from "../Components/otherCourse";
 import Blogbox from "../Components/blogBox";
 import { data } from "../Components/gridListData/Data";
 import Image from "react-bootstrap/Image";
+import Quesans from "../Components/courseComponent/quesAns";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import "react-tabs/style/react-tabs.css";
 import "../Styles/_course.css";
 
 const useStyles = makeStyles({
@@ -196,7 +199,6 @@ export default function Course(props) {
     <React.Fragment>
       <Container>
         <div className="course_header">
-          {" "}
           <Row>
             <Col md={8}>
               <div className="course_title">
@@ -234,6 +236,7 @@ export default function Course(props) {
                   width={"100%"}
                   height="100%"
                   url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                  //light="http://placekitten.com/200/300"
                   muted={muted}
                   playing={playing}
                   volume={volume}
@@ -272,226 +275,237 @@ export default function Course(props) {
                   onChangeDisplayFormat={handleChangeDisplayFormat}
                 />
               </div>
-              <div className="button_list">
-                <button value="" class="active">
-                  Overview
-                </button>
-                <button value="">Q & A </button>
-                <button value="">Notes</button>
-                <button value="">Announcements</button>
-                <span onClick={handleBookmarks} className="icon">
-                  {bookmark ? <BookmarkIcon /> : <BookmarkBorderIcon />}
-                </span>
-              </div>
-            </Col>
-            <Col md={4} className="playList text-white">
-              <table>
-                <tbody>
-                  <tr>
-                    <Accordion className="modify-accordion ">
-                      <AccordionSummary
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
-                      >
-                        <Typography className="icon_trailer">
-                          <svg
-                            width="25"
-                            height="25"
-                            viewBox="0 0 25 25"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <circle
-                              cx="12.5"
-                              cy="12.5"
-                              r="12.5"
-                              transform="rotate(90 12.5 12.5)"
-                              fill="#191C21"
-                            />
-                            <path
-                              d="M17.5 11.634C18.1667 12.0189 18.1667 12.9811 17.5 13.366L10.75 17.2631C10.0833 17.648 9.25 17.1669 9.25 16.3971L9.25 8.60289C9.25 7.83309 10.0833 7.35196 10.75 7.73686L17.5 11.634Z"
-                              fill="white"
-                            />
-                          </svg>
-                          <p className="trailer">Class Trailer</p>
-                        </Typography>
-                      </AccordionSummary>
-                    </Accordion>
-                  </tr>
-                  <tr>
-                    <Accordion className="modify-accordion">
-                      <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
-                      >
-                        <Typography>
-                          2. What is included in a WorldClass membership?
-                        </Typography>
-                      </AccordionSummary>
-                      <AccordionDetails>
-                        <Typography>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Suspendisse malesuada lacus ex, sit amet blandit
-                          leo lobortis eget.
-                        </Typography>
-                      </AccordionDetails>
-                    </Accordion>
-                  </tr>
-                  <tr>
-                    <Accordion className="modify-accordion">
-                      <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
-                      >
-                        <Typography>3. Where can I watch?</Typography>
-                      </AccordionSummary>
-                      <AccordionDetails>
-                        <Typography>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Suspendisse malesuada lacus ex, sit amet blandit
-                          leo lobortis eget.
-                        </Typography>
-                      </AccordionDetails>
-                    </Accordion>
-                  </tr>
-                  <tr>
-                    <Accordion className="modify-accordion">
-                      <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
-                      >
-                        <Typography>
-                          4. Which classes are right for me?
-                        </Typography>
-                      </AccordionSummary>
-                      <AccordionDetails>
-                        <Typography>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Suspendisse malesuada lacus ex, sit amet blandit
-                          leo lobortis eget.
-                        </Typography>
-                      </AccordionDetails>
-                    </Accordion>
-                  </tr>
-                  <tr>
-                    <Accordion className="modify-accordion">
-                      <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
-                      >
-                        <Typography>
-                          5. Which classes are right for me?
-                        </Typography>
-                      </AccordionSummary>
-                      <AccordionDetails>
-                        <Typography>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Suspendisse malesuada lacus ex, sit amet blandit
-                          leo lobortis eget.
-                        </Typography>
-                      </AccordionDetails>
-                    </Accordion>
-                  </tr>
-                  <tr>
-                    <Accordion className="modify-accordion">
-                      <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
-                      >
-                        <Typography>
-                          6. Which classes are right for me?
-                        </Typography>
-                      </AccordionSummary>
-                      <AccordionDetails>
-                        <Typography>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Suspendisse malesuada lacus ex, sit amet blandit
-                          leo lobortis eget.
-                        </Typography>
-                      </AccordionDetails>
-                    </Accordion>
-                  </tr>
-                  <tr>
-                    <Accordion className="modify-accordion">
-                      <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
-                      >
-                        <Typography>
-                          7. Which classes are right for me?
-                        </Typography>
-                      </AccordionSummary>
-                      <AccordionDetails>
-                        <Typography>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Suspendisse malesuada lacus ex, sit amet blandit
-                          leo lobortis eget.
-                        </Typography>
-                      </AccordionDetails>
-                    </Accordion>
-                  </tr>
-                  <tr>
-                    <Accordion className="modify-accordion">
-                      <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
-                      >
-                        <Typography>
-                          8. Which classes are right for me?
-                        </Typography>
-                      </AccordionSummary>
-                      <AccordionDetails>
-                        <Typography>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Suspendisse malesuada lacus ex, sit amet blandit
-                          leo lobortis eget.
-                        </Typography>
-                      </AccordionDetails>
-                    </Accordion>
-                  </tr>
-                  <tr>
-                    <Accordion className="modify-accordion">
-                      <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
-                      >
-                        <Typography>
-                          9. What kind of classes are right for you?
-                        </Typography>
-                      </AccordionSummary>
-                      <AccordionDetails>
-                        <Typography>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Suspendisse malesuada lacus ex, sit amet blandit
-                          leo lobortis eget.
-                        </Typography>
-                      </AccordionDetails>
-                    </Accordion>
-                  </tr>
-                </tbody>
-              </table>
-            </Col>
-          </Row>
-          <div className="clr"></div>
-        </section>
-      </Container>
-      <div className="cls"></div>
 
-      <section className="flex_adjust">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-8">
-              <Courseoverview />
-            </div>
-            <div className="col-md-4">
+              {/*
+====================================
+====================================
+*/}
+
+              <Tabs>
+                <TabList className="tab_btn">
+                  <Tab>Overview</Tab>
+                  <Tab>Q & A </Tab>
+                  <Tab>Notes</Tab>
+                  <Tab>Announcements</Tab>
+                  <span onClick={handleBookmarks} className="icon ">
+                    {bookmark ? <BookmarkIcon /> : <BookmarkBorderIcon />}
+                  </span>
+                </TabList>
+
+                <TabPanel>
+                  <div className="margin_adjust">
+                    <Courseoverview />
+                  </div>
+                </TabPanel>
+                <TabPanel>
+                  <div className="margin_adjust">
+                    <Quesans />
+                  </div>
+                </TabPanel>
+              </Tabs>
+            </Col>
+            <Col md={4}>
+              <div className="playList">
+                <table>
+                  <tbody>
+                    <tr>
+                      <Accordion className="modify-accordion ">
+                        <AccordionSummary
+                          aria-controls="panel1a-content"
+                          id="panel1a-header"
+                        >
+                          <Typography className="icon_trailer">
+                            <svg
+                              width="25"
+                              height="25"
+                              viewBox="0 0 25 25"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle
+                                cx="12.5"
+                                cy="12.5"
+                                r="12.5"
+                                transform="rotate(90 12.5 12.5)"
+                                fill="#191C21"
+                              />
+                              <path
+                                d="M17.5 11.634C18.1667 12.0189 18.1667 12.9811 17.5 13.366L10.75 17.2631C10.0833 17.648 9.25 17.1669 9.25 16.3971L9.25 8.60289C9.25 7.83309 10.0833 7.35196 10.75 7.73686L17.5 11.634Z"
+                                fill="white"
+                              />
+                            </svg>
+                            <p className="trailer">Class Trailer</p>
+                          </Typography>
+                        </AccordionSummary>
+                      </Accordion>
+                    </tr>
+                    <tr>
+                      <Accordion className="modify-accordion">
+                        <AccordionSummary
+                          expandIcon={<ExpandMoreIcon />}
+                          aria-controls="panel1a-content"
+                          id="panel1a-header"
+                        >
+                          <Typography>
+                            2. What is included in a WorldClass membership?
+                          </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                          <Typography>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Suspendisse malesuada lacus ex, sit amet
+                            blandit leo lobortis eget.
+                          </Typography>
+                        </AccordionDetails>
+                      </Accordion>
+                    </tr>
+                    <tr>
+                      <Accordion className="modify-accordion">
+                        <AccordionSummary
+                          expandIcon={<ExpandMoreIcon />}
+                          aria-controls="panel1a-content"
+                          id="panel1a-header"
+                        >
+                          <Typography>3. Where can I watch?</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                          <Typography>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Suspendisse malesuada lacus ex, sit amet
+                            blandit leo lobortis eget.
+                          </Typography>
+                        </AccordionDetails>
+                      </Accordion>
+                    </tr>
+                    <tr>
+                      <Accordion className="modify-accordion">
+                        <AccordionSummary
+                          expandIcon={<ExpandMoreIcon />}
+                          aria-controls="panel1a-content"
+                          id="panel1a-header"
+                        >
+                          <Typography>
+                            4. Which classes are right for me?
+                          </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                          <Typography>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Suspendisse malesuada lacus ex, sit amet
+                            blandit leo lobortis eget.
+                          </Typography>
+                        </AccordionDetails>
+                      </Accordion>
+                    </tr>
+                    <tr>
+                      <Accordion className="modify-accordion">
+                        <AccordionSummary
+                          expandIcon={<ExpandMoreIcon />}
+                          aria-controls="panel1a-content"
+                          id="panel1a-header"
+                        >
+                          <Typography>
+                            5. Which classes are right for me?
+                          </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                          <Typography>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Suspendisse malesuada lacus ex, sit amet
+                            blandit leo lobortis eget.
+                          </Typography>
+                        </AccordionDetails>
+                      </Accordion>
+                    </tr>
+                    <tr>
+                      <Accordion className="modify-accordion">
+                        <AccordionSummary
+                          expandIcon={<ExpandMoreIcon />}
+                          aria-controls="panel1a-content"
+                          id="panel1a-header"
+                        >
+                          <Typography>
+                            6. Which classes are right for me?
+                          </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                          <Typography>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Suspendisse malesuada lacus ex, sit amet
+                            blandit leo lobortis eget.
+                          </Typography>
+                        </AccordionDetails>
+                      </Accordion>
+                    </tr>
+                    <tr>
+                      <Accordion className="modify-accordion">
+                        <AccordionSummary
+                          expandIcon={<ExpandMoreIcon />}
+                          aria-controls="panel1a-content"
+                          id="panel1a-header"
+                        >
+                          <Typography>
+                            7. Which classes are right for me?
+                          </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                          <Typography>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Suspendisse malesuada lacus ex, sit amet
+                            blandit leo lobortis eget.
+                          </Typography>
+                        </AccordionDetails>
+                      </Accordion>
+                    </tr>
+                    <tr>
+                      <Accordion className="modify-accordion">
+                        <AccordionSummary
+                          expandIcon={<ExpandMoreIcon />}
+                          aria-controls="panel1a-content"
+                          id="panel1a-header"
+                        >
+                          <Typography>
+                            8. Which classes are right for me?
+                          </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                          <Typography>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Suspendisse malesuada lacus ex, sit amet
+                            blandit leo lobortis eget.
+                          </Typography>
+                        </AccordionDetails>
+                      </Accordion>
+                    </tr>
+                    <tr>
+                      <Accordion className="modify-accordion">
+                        <AccordionSummary
+                          expandIcon={<ExpandMoreIcon />}
+                          aria-controls="panel1a-content"
+                          id="panel1a-header"
+                        >
+                          <Typography>
+                            9. What kind of classes are right for you?
+                          </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                          <Typography>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Suspendisse malesuada lacus ex, sit amet
+                            blandit leo lobortis eget.
+                          </Typography>
+                        </AccordionDetails>
+                      </Accordion>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div className="gift_course">
+                <h4>Gift the Course and get 5% off for your next Course</h4>
+                <Button variant="outlined" className="getstarted Gift_course">
+                  GIFT THIS COURSE
+                </Button>
+              </div>
               <div className="suggestion">
                 <div className="suggestion_heading">
                   <h4>Suggested Course</h4>
@@ -516,10 +530,11 @@ export default function Course(props) {
                   />
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            </Col>
+          </Row>
+          <div className="clr"></div>
+        </section>
+      </Container>
       <section className="offer_slider ">
         <div className="container">
           <div className="col-md-12 col-xs-12 col-sm-12">
@@ -598,7 +613,7 @@ export default function Course(props) {
           <Row>
             <Col>
               <div className="view_all_blog">
-                <Button className="" variant="outlined">
+                <Button className="view_all_blog_btn" variant="outlined">
                   VIEW ALL
                 </Button>
               </div>

@@ -1,22 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-import reducer, {initialState} from "./Store/reducer";
-import {StateProvider} from "./Store/index";
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+import reducer, { initialState } from "./Store/reducer";
+import { StateProvider } from "./Store/index";
 // import { debugContextDevtool } from 'react-context-devtool';
-
 
 ReactDOM.render(
   <React.StrictMode>
-    <StateProvider initialState={initialState} reducer ={reducer} >
-    <App />
+    <StateProvider initialState={initialState} reducer={reducer}>
+      <App />
     </StateProvider>
   </React.StrictMode>,
-    document.getElementById('root')
+  document.getElementById("root")
 );
-
 
 //context devtool
 // debugContextDevtool(container, {
@@ -27,4 +25,3 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
-

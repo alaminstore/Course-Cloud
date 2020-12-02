@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Nav } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { data } from "../Components/gridListData/Data";
 import "../Styles/_otherCourse.css";
 export default class Othercourse extends Component {
@@ -7,7 +7,7 @@ export default class Othercourse extends Component {
     super(props);
     this.state = {
       Data: data,
-      DataList: data,
+      DataList: data.filter((item) => item.cat === "arts"),
     };
   }
 

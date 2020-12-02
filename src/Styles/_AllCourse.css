@@ -36,7 +36,7 @@ input.search-form {
   background: transparent;
   border: 2px solid #353d4c;
   box-sizing: border-box;
-  border-radius: 5px;
+  border-radius: 5px 0px 0px 5px;
   color: #fbf4f4;
   font-family: "Lato";
 }

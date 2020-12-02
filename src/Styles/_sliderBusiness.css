@@ -1,0 +1,13 @@
+.business_slider_stat {
+  position: relative;
+}
+.business_slider_stat .swiper-button-next {
+  right: -10px !important;
+  left: auto;
+  top: 38% !important;
+}
+.business_slider_stat .swiper-button-prev {
+  left: -10px !important;
+  right: auto;
+  top: 38%;
+}

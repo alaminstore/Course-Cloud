@@ -1,0 +1,259 @@
+.edit_profile {
+  background-image: url("/images/Group.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.edit_button {
+  display: flex;
+  justify-content: flex-end;
+}
+.edit_button button.MuiButtonBase-root.MuiButton-root.MuiButton-contained {
+  width: 168px;
+  height: 40px;
+  background: #21252d;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 14px;
+  font-family: "Lato";
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+}
+.profile_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile_image {
+  width: 286px;
+  height: 286px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 42px;
+}
+.profile_image img {
+  width: 286px;
+  height: 286px;
+  border-radius: 50%;
+}
+.user_name h5 {
+  color: #fbf4f4;
+  font-size: 36px;
+  font-family: "Lato";
+  font-weight: 700;
+  margin: 32px 0 25px 0;
+}
+.user_status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.current_position h6,
+.inerested_position h6 {
+  color: #fff;
+  font-size: 15px;
+  font-family: "Lato";
+  font-weight: 500;
+}
+.current_position h6 span,
+.inerested_position h6 span {
+  color: #bbbb;
+  margin-right: 12px;
+}
+.current_position {
+  position: relative;
+}
+.current_position::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  border: 0;
+  left: 10%;
+  width: 100%;
+  height: 65%;
+  border-right: 2px solid #fff;
+}
+.inerested_position {
+  margin-left: 32px;
+}
+.user_link {
+  display: flex;
+  width: 310px;
+  height: 53px;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #21252d;
+  border-radius: 10px;
+  margin: 25px 0 38px 0;
+}
+.percentage_slider_header h5 {
+  padding-top: 30px;
+  color: #fbf4f4;
+  font-size: 24px;
+  font-family: "Lato";
+  font-weight: 700;
+  margin-bottom: 45px;
+}
+.leaderboard_header h5 {
+  color: #fbf4f4;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Lato";
+}
+.leaderboard_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 40px;
+}
+.leaderboard {
+  background: #191c23;
+  padding: 60px 0 0 0;
+  margin-bottom: 110px;
+}
+.table_lead_content table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.table_lead_content thead,
+.table_lead_content tbody {
+  width: 100%;
+  padding: 0 !important;
+}
+.table_lead_content table tr {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: baseline;
+}
+.table_lead_content table th,
+.table_lead_content table td {
+  color: #fbf4f4;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.8;
+  border: none !important;
+  text-align: center !important;
+}
+tbody tr:nth-child(odd) {
+  background-color: #252a34;
+}
+.table_lead_content table th {
+  text-align: center;
+}
+.table thead th {
+  color: #5f6368;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Lato";
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table tbody tr td,
+.table th {
+  width: 25%;
+  text-align: center !important;
+}
+.model_close {
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: center;
+}
+.upload_profile_image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.edit_profile_model .modal-content {
+  background: #191c21;
+  margin-top: 100px;
+}
+
+.edit_profile_model .modal-body label {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Lato";
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 960px) {
+  #input_box_size {
+    width: 358px;
+  }
+}
+/* // */
+#input_box_size {
+  height: 56px;
+  background: #292e36;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+}
+
+.edit_profile_model .form-group.col-md-6 {
+  margin-top: 20px;
+}
+.edit_profile_model .form-row > .col,
+.edit_profile_model .form-row > [class*="col-"] {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.button_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.btn.btn-block.save_button {
+  background: #d19f28;
+  border-radius: 4px;
+  width: 745px;
+  height: 56px;
+  font-size: 18px;
+  color: #191c21;
+}
+.upload_button .MuiButtonBase-root.MuiButton-root.MuiButton-outlined {
+  width: 230px;
+  height: 60px;
+  color: #fff;
+  border: 2px solid #d19f28;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: "Lato";
+  font-weight: 600;
+  margin: 35px 0 25px 0;
+  text-transform: unset;
+}
+.profile_image_show {
+  margin-top: 25px;
+  height: 112px;
+  width: 112px;
+  border-radius: 50%;
+}
+.model_close span {
+  background: rgba(196, 196, 196, 0.4);
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+}

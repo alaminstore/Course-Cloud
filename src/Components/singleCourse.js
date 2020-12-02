@@ -11,7 +11,38 @@ export default function SingleCourse(props) {
       <div className="single-course">
         <div className="img-sec">
           <Image fluid src="/images/blog/1.jpg" className="course-img" />
+          <div className="image_overly_course">
+            <svg
+              width="65"
+              height="66"
+              viewBox="0 0 65 66"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <ellipse
+                cx="32.4523"
+                cy="32.8863"
+                rx="32.4523"
+                ry="32.7281"
+                fill="white"
+                fill-opacity="0.14"
+              />
+              <ellipse
+                cx="32.3427"
+                cy="32.8473"
+                rx="26.747"
+                ry="26.9743"
+                fill="white"
+                fill-opacity="0.35"
+              />
+              <path
+                d="M41.2308 30.5928C42.8373 31.5658 42.8373 33.8965 41.2308 34.8695L29.766 41.8133C28.0999 42.8224 25.9709 41.6228 25.9709 39.6749L25.9709 25.7874C25.9709 23.8395 28.0999 22.6399 29.766 23.649L41.2308 30.5928Z"
+                fill="white"
+              />
+            </svg>
+          </div>
         </div>
+
         <div className="content-sec">
           {discount && (
             <div
@@ -53,7 +84,7 @@ export default function SingleCourse(props) {
               />
               <p className="author-name">Jhon Doe</p>
             </div>
-            <Button variant="outlined" className="course-btn">
+            <Button variant="outlined" className="course-btn add_to_cart_btns">
               Add to Cart
             </Button>
           </div>

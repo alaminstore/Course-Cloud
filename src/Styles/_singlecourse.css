@@ -1,127 +1,142 @@
 .single-course {
-    border-radius: 5px;
+  border-radius: 5px;
 }
 .single-course .img-sec {
-    max-height: 250px;
-    overflow: hidden;
-
+  max-height: 250px;
+  overflow: hidden;
 }
 .single-course .img-sec .course-img {
-    border-radius: 5px 5px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
 }
-
 
 .single-course .content-sec {
-    position: relative;
-    background: #21252C;
-    border-radius: 0px 0px 5px 5px;
-    padding: 33px 20px 20px;
+  position: relative;
+  background: #21252c;
+  border-radius: 0px 0px 5px 5px;
+  padding: 33px 20px 20px;
 }
 
-.single-course  .discountbox{
-    position: absolute;
-    top: -26px;
-    right: 14px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.single-course .discountbox {
+  position: absolute;
+  top: -26px;
+  right: 14px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.single-course  .discountbox > div{
-
+.single-course .discountbox > div {
 }
-.single-course  .discountbox > div p{
-    font-family: "Lato", sans-serif;
-    font-size: 11px;
-    font-weight: 800;
-    margin: 0;
+.single-course .discountbox > div p {
+  font-family: "Lato", sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  margin: 0;
 }
-.single-course  .discountbox > div p:first-child{
-   color: #FA5862;
+.single-course .discountbox > div p:first-child {
+  color: #fa5862;
 }
-.single-course  .discountbox > div p:last-child{
-    text-decoration: line-through;
-    color: #2A2A2A;
-
+.single-course .discountbox > div p:last-child {
+  text-decoration: line-through;
+  color: #2a2a2a;
 }
-.single-course  .discountparcent{
-    position: absolute;
-    top: -26px;
-    right: 14px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 56px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.single-course .discountparcent {
+  position: absolute;
+  top: -26px;
+  right: 14px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.single-course  .discountparcent > div{
-
+.single-course .discountparcent > div {
 }
-.single-course  .discountparcent > div p{
-    font-family: "Lato", sans-serif;
-    font-size: 14px;
-    font-weight: 800;
-    margin: 0;
-    line-height: 11px;
+.single-course .discountparcent > div p {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  margin: 0;
+  line-height: 11px;
 }
-.single-course  .discountparcent > div p:first-child{
-   color: #FA5862;
+.single-course .discountparcent > div p:first-child {
+  color: #fa5862;
 }
-.single-course  .discountparcent > div p:last-child{
-    font-size: 11px;
-    color: #767676;
+.single-course .discountparcent > div p:last-child {
+  font-size: 11px;
+  color: #767676;
 }
 
 .single-course p.course-cat {
-    font-size: 14px;
-    line-height: 150%;
-    color: #8B8787;
+  font-size: 14px;
+  line-height: 150%;
+  color: #8b8787;
 }
 
 .single-course h1.course-title {
-    font-size: 15px;
-    line-height: 140%;
-    color: #FBF4F4;
-    font-style: normal;
-    font-weight: bold;
+  font-size: 15px;
+  line-height: 140%;
+  color: #fbf4f4;
+  font-style: normal;
+  font-weight: bold;
 }
-
-
 
 .single-course p.course-excerpt {
-    font-size: 14px;
-    line-height: 150%;
-    color: #ccc8c8;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ccc8c8;
 }
 .single-course .course-footer {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.single-course .content-sec .course-user{
-    display: flex;
+.single-course .content-sec .course-user {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .single-course .content-sec .course-author {
-    width: 40px;
-    height: 40px;
-    border: 1px solid white;
-
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
 }
-.single-course .content-sec .author-name{
-    color: white;
-    font-size: 14px;
-    margin: 10px 0px 0px 10px;
+.single-course .content-sec .author-name {
+  color: white;
+  font-size: 14px;
+  margin: 10px 0px 0px 10px;
 }
 .single-course .course-btn {
-    color: white !important;
-    border-color: #ffffff !important;
-    font-size: 10px !important;
-    padding: 4px 10px;
+  color: white !important;
+  border-color: #ffffff !important;
+  font-size: 10px !important;
+  padding: 4px 10px;
+}
+button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined.course-btn.add_to_cart_btns {
+  width: 115px;
+  height: 40px;
+  font-size: 12px;
+  font-family: "Lato";
+  font-weight: 400;
+}
+.img-sec img {
+  position: relative;
+}
+.image_overly_course {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

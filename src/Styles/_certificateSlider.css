@@ -1,0 +1,66 @@
+.certificate_slider_header h5 {
+  color: #fbf4f4;
+  margin: 60px 0 45px 0;
+  font-size: 24px;
+  font-family: "Lato";
+  font-weight: 700;
+}
+/* .certificate_slider_single_portion {
+  background: #21252d;
+  width: 564px;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+.course_title_name h5 {
+  color: #fbf4f4;
+  font-size: 20px;
+  font-family: "Lato";
+  font-weight: 600;
+  margin: 19px 0 34px 23px;
+}
+.download_completed_date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 23px;
+}
+.download_completed_date
+  button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined {
+  color: #fbf4f4;
+  border: 1px solid #fbf4f4;
+  width: 155px;
+  height: 30px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.download_completed_date p {
+  color: #747474;
+  font-size: 16px;
+  font-family: "Lato";
+  font-weight: 400;
+}
+.download_completed_date {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 23px 36px 23px;
+}
+.certificate_slider_single_portion {
+  background: #21252d;
+  border-radius: 6px;
+}
+
+.certificate_slider_start .swiper-button-prev,
+.certificate_slider_start .swiper-button-next {
+  top: 57%;
+}
+.certificate_slider_start .swiper-button-prev:after,
+.certificate_slider_start .swiper-button-next:after {
+  background: linear-gradient(180deg, #282d37 0%, #0e1115 100%) !important;
+}
+.certificate_slider_start {
+  margin-bottom: 60px;
+}

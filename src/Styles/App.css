@@ -16,6 +16,12 @@ ol {
 .clr {
   clear: both !important;
 }
+
+@font-face {
+  font-family: sofiaPro;
+  src: url("/fonts/Sofia Pro Regular Az.otf");
+}
+
 /* reset*/
 button:focus {
   outline: none;
@@ -127,4 +133,7 @@ button:focus {
 .bottom-footer p {
   font-size: 18px;
   color: #fbf4f4;
+}
+.red {
+  color: red;
 }

@@ -1,0 +1,27 @@
+.another_courses_slider_portion h5 {
+  margin: 110px 0 35px 0;
+  color: #fff;
+  font-size: 36px;
+  font-family: "Lato";
+  font-weight: 700;
+}
+button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined.course-btn.add_to_cart_btns {
+  width: 115px;
+  height: 40px;
+  font-size: 12px;
+  font-family: "Lato";
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined.course-btn.add_to_cart_btns:hover {
+  background: #5193f6;
+  border-radius: 3px;
+  border: none;
+}
+.another_slider_slider_start .swiper-button-prev,
+.another_slider_slider_start .swiper-button-next {
+  top: 62%;
+}

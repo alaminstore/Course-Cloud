@@ -73,10 +73,13 @@ button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined.Add_to_cart_button:h
   position: unset !important;
 }
 
-.swiper-button-prev {
+.slider_start .swiper-button-prev {
   left: 0 !important;
 }
-.swiper-button-next {
+/* .swiper-button-next {
+  right: 3% !important;
+} */
+.slider_start .swiper-button-next {
   right: 3% !important;
 }
 .swiper-wrapper {

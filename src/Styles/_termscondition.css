@@ -1,0 +1,40 @@
+.terms_condition h3 {
+  text-align: center;
+  margin: 25px 0 25px 0;
+  font-size: 36px;
+  font-family: "Lato";
+  font-weight: 700;
+}
+.terms_condition h5 {
+  font-size: 24px;
+  font-family: "Lato";
+  font-weight: 600;
+  width: 80%;
+  margin: 20px 0 15px 0;
+}
+.terms_condition p {
+  font-size: 15px;
+  font-family: "Lato";
+  font-weight: 400;
+  color: #bababa;
+}
+.ul_content {
+  color: #bababa;
+}
+.red {
+  color: red;
+}
+.content_terms {
+  margin: 40px 20px 40px 20px;
+  background: #272727;
+}
+.copyright_part {
+  display: flex;
+  justify-content: flex-end !important;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+p.box_bg {
+  background: #3e3e3e;
+  padding: 10px;
+}

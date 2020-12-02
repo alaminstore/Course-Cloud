@@ -45,12 +45,24 @@
   justify-content: center;
   align-items: center;
 }
+/* .overview {
+  background: #191c21;
+  border: 1px solid #21252d;
+  box-sizing: border-box;
+  border-radius: 0 0 5px 5px;
+  margin-bottom: 110px;
+} */
 .overview {
   background: #191c21;
   border: 1px solid #21252d;
   box-sizing: border-box;
-  border-radius: 5px;
-  margin-bottom: 110px;
+  border-radius: 0 0 5px 5px;
+  max-height: 710px;
+  display: inline-block;
+  overflow: auto;
+  margin-bottom: 15px;
+  padding: 0 0 0px 3%;
+  overflow-x: hidden;
 }
 .overview h5 {
   color: #fbf4f4;

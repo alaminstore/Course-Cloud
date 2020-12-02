@@ -1,0 +1,204 @@
+.setting_page_header_portion h2 {
+  color: #fbf4f4;
+  font-size: 36px;
+  font-family: "Lato";
+  font-weight: 700;
+  margin: 80px 0 50px 0;
+}
+.connect_form_start {
+  background: #191c21;
+}
+.connect_form_portion {
+  margin-bottom: 50px;
+}
+.connect_form_start.text-white {
+  padding: 5%;
+}
+.connect_form_start input#exampleInputEmail1,
+.connect_form_start input#exampleInputPassword1 {
+  background: #292e36;
+  border-radius: 4px;
+  height: 56px;
+  border: navajowhite;
+  color: #ffffff;
+}
+.connect_form_start button.btn.btn-block {
+  background: #2c5097;
+  border-radius: 4px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 600;
+  margin: 93px 0 20px 0;
+}
+label.color_form_connect.d-flex span {
+  color: #686a70;
+  font-size: 15px;
+  font-family: "Lato";
+  font-weight: 500;
+}
+
+.manage_device_portion {
+  background: #191c21;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  padding: 5%;
+}
+.logo_portion_s {
+  text-align: center;
+  width: 100%;
+  margin: 25px 0 46px 0;
+}
+.logo_desc_portion_s p {
+  color: #bababa;
+  font-size: 14px;
+  font-family: "Lato";
+  font-weight: 500;
+  line-height: 19.2px;
+}
+.some_ind_setting {
+  margin: 37px 0 0px 0;
+  line-height: 21.6px;
+}
+.some_ind_setting h4 {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-family: "Lato";
+  font-weight: 500;
+}
+.payment_inp_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #292e36;
+  border-radius: 4px;
+}
+input#payment_portion_input {
+  height: 56px;
+  background: #292e36;
+  border-radius: 4px;
+  padding: 10px;
+  border: 0;
+}
+.payment_method_portion {
+  background: #191c21;
+  padding: 12% 10% 14.8% 10%;
+}
+.inputbox_port {
+  width: 85%;
+}
+.payment_add_part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.payment_add_part h5 {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Lato";
+  font-weight: 500;
+  margin: 0 0 46px 0;
+}
+.payment_add_part p {
+  color: #686a70;
+  font-size: 15px;
+  font-family: "Lato";
+  font-weight: 500;
+  cursor: pointer;
+}
+.subs_header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.subs_inp_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  background: #292e36;
+  border-radius: 4px;
+  padding: 15px 20px 26px 20px;
+}
+button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.active_subs {
+  background: #343629;
+  border-radius: 4px;
+  text-transform: capitalize;
+  color: #e2af25;
+  opacity: 71%;
+  width: 72px;
+  height: 26px;
+  font-size: 12px;
+  font-family: "Lato";
+  font-weight: 500;
+}
+.subs_method_portion {
+  background: #191c21;
+  padding: 12% 10% 5% 10%;
+}
+.subs_header h6 {
+  color: #ffffff;
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 600;
+}
+.subs_add_part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subs_add_part h5 {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Lato";
+  font-weight: 500;
+  margin: 0 0 46px 0;
+}
+.subs_add_part p {
+  color: #686a70;
+  font-size: 15px;
+  font-family: "Lato";
+  font-weight: 500;
+  cursor: pointer;
+}
+.subs_inp_box p {
+  line-height: 13.8px;
+  font-size: 12px;
+  color: #ffffff;
+  opacity: 53%;
+  width: 68%;
+  margin: 0;
+}
+.payment_subs_portion {
+  margin-bottom: 110px;
+}
+#payment_portion_input::placeholder {
+  font-size: 50px;
+  letter-spacing: 6px;
+  font-weight: 700;
+}
+#payment_portion_input::-moz-placeholder {
+  font-size: 50px;
+  letter-spacing: 6px;
+  font-weight: 700;
+}
+.icon_port {
+  display: flex;
+  width: 20%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+p.card_test {
+  color: #ffffff;
+  opacity: 35%;
+  margin-top: 19%;
+}
